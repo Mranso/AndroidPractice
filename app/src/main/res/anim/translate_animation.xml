@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+    以下参数是平移动画特有的属性
+    android:fromXDelta="0"          视图在水平方向x 移动的起始值
+    android:toXDelta="500"          视图在水平方向x 移动的结束值
+    android:fromYDelta="0"          视图在竖直方向y 移动的起始值
+    android:toYDelta="500"          视图在竖直方向y 移动的结束值
+-->
+
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="3000"
+    android:fillAfter="false"
+    android:fillBefore="true"
+    android:fillEnabled="true"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:repeatCount="0"
+    android:repeatMode="restart"
+    android:startOffset="1000"
+
+    android:fromXDelta="0"
+    android:fromYDelta="0"
+    android:toXDelta="500"
+    android:toYDelta="500" />

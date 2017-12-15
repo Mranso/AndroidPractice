@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+    以下参数是透明度动画特有的属性
+    android:fromAlpha="1.0"     动画开始时视图的透明度(取值范围: -1 ~ 1)
+    android:toAlpha="0.0"       动画结束时视图的透明度(取值范围: -1 ~ 1)
+
+-->
+
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="3000"
+    android:fillAfter="false"
+    android:fillBefore="true"
+    android:fillEnabled="true"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:repeatCount="0"
+    android:repeatMode="restart"
+    android:startOffset="1000"
+
+    android:fromAlpha="1.0"
+    android:toAlpha="0.0" />

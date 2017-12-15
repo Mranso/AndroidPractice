@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+    以下参数是旋转动画特有的属性
+    android:fromDegrees="0"     动画开始时 视图的旋转角度(正数 = 顺时针，负数 = 逆时针)
+    android:toDegrees="270"     动画结束时 视图的旋转角度(正数 = 顺时针，负数 = 逆时针)
+    android:pivotX="50%"        旋转轴点的x坐标
+    android:pivotY="0"          旋转轴点的y坐标
+    轴点 = 视图缩放的中心点
+
+    pivotX pivotY,可取值为数字，百分比，或者百分比p
+    设置为数字时（如50），轴点为View的左上角的原点在x方向和y方向加上50px的点。在Java代码里面设置这个参数的对应参数是Animation.ABSOLUTE。
+    设置为百分比时（如50%），轴点为View的左上角的原点在x方向加上自身宽度50%和y方向自身高度50%的点。在Java代码里面设置这个参数的对应参数是Animation.RELATIVE_TO_SELF。
+    设置为百分比p时（如50%p），轴点为View的左上角的原点在x方向加上父控件宽度50%和y方向父控件高度50%的点。在Java代码里面设置这个参数的对应参数是Animation.RELATIVE_TO_PARENT
+    两个50%表示动画从自身中间开始，具体如下图
+
+-->
+
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="3000"
+    android:fillAfter="false"
+    android:fillBefore="true"
+    android:fillEnabled="true"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:repeatCount="0"
+    android:repeatMode="restart"
+    android:startOffset="1000"
+
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:pivotX="50%"
+    android:pivotY="50%"/>

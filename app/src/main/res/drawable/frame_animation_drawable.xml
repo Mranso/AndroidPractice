@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">  <!-- 是否循环执行 -->
+
+    <item
+        android:drawable="@drawable/frame_animation_a"
+        android:duration="200" />   <!-- 执行时间 -->
+
+    <item
+        android:drawable="@drawable/frame_animation_b"
+        android:duration="200" />
+
+    <item
+        android:drawable="@drawable/frame_animation_c"
+        android:duration="200" />
+</animation-list>
