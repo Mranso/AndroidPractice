@@ -96,6 +96,13 @@ import android.widget.Toast;
  * <p>
  * 在6.0版本以上申请危险权限如果你申请某个危险的权限，假设你的app早已被用户授权了同一组的某个危险权限，那么系统会立即授权，而不需要用户去点击授权
  * 不要对权限组过多的依赖，尽可能对每个危险权限都进行正常流程的申请，因为在后期的版本中这个权限组可能会产生变化
+ *
+ *
+ * 优秀的权限库
+ * PermissionsDispatcher 使用注解的方式
+ * RxPermissions
+ * easypermissions
+ * AndPermission
  */
 
 
