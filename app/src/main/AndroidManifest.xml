@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.anso.androidpractice">
 
-
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -12,10 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnimationActivity">
-
-        </activity>
-        <activity android:name=".PermissionsActivity">
+        <activity android:name=".AnimationActivity"></activity>
+        <activity android:name=".PermissionsActivity"></activity>
+        <activity android:name=".DialogActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
