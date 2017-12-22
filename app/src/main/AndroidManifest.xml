@@ -11,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnimationActivity"></activity>
-        <activity android:name=".PermissionsActivity"></activity>
-        <activity android:name=".DialogActivity">
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".PermissionsActivity" />
+        <activity android:name=".DialogActivity"/>
+        <activity android:name=".banner.ViewPagerBannerActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
