@@ -11,5 +11,11 @@
         android:text="BottomSheetDialog底部弹窗"
         android:layout_margin="5dp"/>
 
+    <Button
+        android:id="@+id/dialog_activity_alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android自带Dialog"
+        android:layout_margin="5dp"/>
 
 </LinearLayout>
