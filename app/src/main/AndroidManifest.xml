@@ -13,11 +13,12 @@
         android:theme="@style/AppTheme">
         <activity android:name=".AnimationActivity" />
         <activity android:name=".PermissionsActivity" />
-        <activity android:name=".DialogActivity"></activity>
-        <activity android:name=".banner.ViewPagerBannerActivity">
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".banner.ViewPagerBannerActivity"></activity>
+        <activity android:name=".ProgressActivity">
 
         </activity>
-        <activity android:name=".ProgressActivity">
+        <activity android:name=".RefreshActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
