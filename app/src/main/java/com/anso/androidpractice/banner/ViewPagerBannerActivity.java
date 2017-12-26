@@ -45,16 +45,19 @@ public class ViewPagerBannerActivity extends AppCompatActivity {
 
     private class ViewPagerAdapter extends PagerAdapter {
 
+        //获取当前界面数量
         @Override
         public int getCount() {
             return Integer.MAX_VALUE;
         }
 
+        //判断是否由对象生成界面，官方建议直接返回 return view == object
         @Override
         public boolean isViewFromObject(View view, Object object) {
             return view == object;
         }
 
+        //如果页面不是当前显示的页面也不是要缓存的页面，会调用这个方法，将页面销毁
         @Override
         public void destroyItem(ViewGroup container, int position, Object object) {
             container.removeView((View) object);
@@ -79,6 +82,7 @@ public class ViewPagerBannerActivity extends AppCompatActivity {
 
         }
 
+        //要显示的页面或需要缓存的页面，会调用这个方法进行布局的初始化
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
 

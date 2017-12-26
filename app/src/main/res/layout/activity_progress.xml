@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.anso.androidpractice.widget.CircleProgressBar
+        android:id="@+id/line_progress"
+        android:layout_marginTop="16dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.anso.androidpractice.widget.CircleProgressBar
+        android:id="@+id/solid_progress"
+        android:layout_marginTop="16dp"
+        app:style="solid"
+        app:progress_text_color="#ff33b5e5"
+        app:progress_stroke_width="3dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.anso.androidpractice.widget.CircleProgressBar
+        android:id="@+id/custom_progress1"
+        android:layout_marginTop="16dp"
+        app:style="line"
+        app:progress_stroke_width="1dp"
+        app:progress_background_color="#ffaaaaaa"
+        app:progress_start_color="#ff99cc00"
+        app:progress_end_color="#ffff4444"
+        app:progress_text_color="#ff33b5e5"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.anso.androidpractice.widget.CircleProgressBar
+        android:id="@+id/custom_progress2"
+        android:layout_marginTop="16dp"
+        app:style="solid"
+        app:progress_shader="radial"
+        app:progress_stroke_width="1dp"
+        app:progress_text_format_pattern="t %d ps"
+        app:progress_background_color="#ffaaaaaa"
+        app:progress_start_color="#ffff4444"
+        app:progress_text_color="#ffff4444"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.anso.androidpractice.widget.CircleProgressBar
+        android:id="@+id/custom_progress3"
+        android:layout_marginTop="16dp"
+        app:style="line"
+        app:line_width="2dp"
+        app:line_count="30"
+        app:progress_stroke_width="1dp"
+        app:progress_text_size="15sp"
+        app:progress_background_color="#ffaaaaaa"
+        app:progress_start_color="#ffffbb33"
+        app:progress_text_color="#ffff4444"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.anso.androidpractice.widget.CircleProgressBar
+        android:id="@+id/custom_progress4"
+        android:layout_marginTop="16dp"
+        app:style="solid_line"
+        app:progress_stroke_width="4dp"
+        app:line_width="4dp"
+        app:line_count="30"
+        app:progress_stroke_cap="round"
+        app:progress_shader="sweep"
+        app:progress_background_color="#ffaaaaaa"
+        app:progress_start_color="#ffaa66cc"
+        app:progress_end_color="@android:color/transparent"
+        app:progress_text_color="#ffaa66cc"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <com.anso.androidpractice.widget.CircleProgressBar
+        android:id="@+id/custom_progress5"
+        android:layout_marginTop="16dp"
+        app:style="solid_line"
+        app:progress_stroke_width="3dp"
+        app:progress_background_color="#ffaaaaaa"
+        app:progress_start_color="#ff99cc00"
+        app:progress_end_color="#ff99cc00"
+        app:progress_text_color="#ff99cc00"
+        app:background_color="#ffaa66cc"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+    <com.anso.androidpractice.widget.CircleProgressBar
+        android:id="@+id/custom_progress6"
+        android:layout_marginTop="16dp"
+        app:style="line"
+        app:draw_progress_text="false"
+        app:progress_background_color="#ffaaaaaa"
+        app:progress_start_color="#ff99cc00"
+        app:progress_text_color="#ff99cc00"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</LinearLayout>
