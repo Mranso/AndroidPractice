@@ -1,5 +1,6 @@
 package com.anso.androidpractice;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
@@ -16,7 +17,7 @@ import com.anso.androidpractice.widget.MyBottomSheetDialog;
 public class DialogActivity extends AppCompatActivity {
 
     private Context context;
-    private Button bottomSheetDialog, alertDialog;
+    private Button bottomSheetDialog, alertDialog, progressDialog;
 
     private String dialogListItems[] = new String[]{"listItems1", "listItems2", "listItems3",
             "listItems4", "listItems5", "listItems6"};
@@ -37,6 +38,7 @@ public class DialogActivity extends AppCompatActivity {
     private void initView() {
         bottomSheetDialog = (Button) findViewById(R.id.dialog_activity_bottom_sheet_dialog);
         alertDialog = (Button) findViewById(R.id.dialog_activity_alert_dialog);
+        progressDialog = (Button) findViewById(R.id.dialog_activity_progress_dialog);
     }
 
     private void initListener() {
@@ -133,6 +135,17 @@ public class DialogActivity extends AppCompatActivity {
 //                    }
 //                });
                 alertDialogBuilder.show();
+            }
+        });
+
+        progressDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ProgressDialog progressDialog = new ProgressDialog(context);
+                progressDialog.setTitle("Progress标题");
+                progressDialog.setMessage("Loading...");
+                progressDialog.setCancelable(true);
+                progressDialog.show();
             }
         });
     }

@@ -11,20 +11,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AnimationActivity" />
-        <activity android:name=".PermissionsActivity" />
-        <activity android:name=".DialogActivity" />
-        <activity android:name=".banner.ViewPagerBannerActivity"></activity>
-        <activity android:name=".ProgressActivity">
+        <activity android:name=".AnimationActivity" >
+
+
 
         </activity>
-        <activity android:name=".RefreshActivity">
+        <activity android:name=".PermissionsActivity" >
+
+
+        </activity>
+        <activity android:name=".DialogActivity" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".banner.ViewPagerBannerActivity">
+
+
+        </activity>
+        <activity android:name=".ProgressActivity">
+
+        </activity>
+        <activity android:name=".RefreshActivity">
+
+
 
         </activity>
     </application>

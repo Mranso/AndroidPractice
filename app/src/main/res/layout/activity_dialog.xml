@@ -18,4 +18,11 @@
         android:text="Android自带Dialog"
         android:layout_margin="5dp"/>
 
+    <Button
+        android:id="@+id/dialog_activity_progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android自带ProgressDialog"
+        android:layout_margin="5dp"/>
+
 </LinearLayout>
