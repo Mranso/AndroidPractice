@@ -10,16 +10,16 @@
 -->
 
 <translate xmlns:android="http://schemas.android.com/apk/res/android"
-    android:duration="3000"
+    android:duration="1000"
     android:fillAfter="false"
     android:fillBefore="true"
     android:fillEnabled="true"
-    android:interpolator="@android:anim/decelerate_interpolator"
+    android:interpolator="@android:anim/linear_interpolator"
     android:repeatCount="0"
     android:repeatMode="restart"
-    android:startOffset="1000"
+    android:startOffset="0"
 
     android:fromXDelta="0"
     android:fromYDelta="0"
-    android:toXDelta="500"
-    android:toYDelta="500" />
+    android:toXDelta="0"
+    android:toYDelta="-15" />
